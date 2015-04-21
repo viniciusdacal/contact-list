@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eeeeee;
+    font-family: 'Tahoma', 'Arial', 'sans-serif';
+    font-size: 13px;
+}
+
+input[type="text"] {
+    padding: 8px;
+    width: 100%;
+    font-size: 13px;
+}
+
+input[type="checkbox"]{
+    position: relative;
+}
+input[type="checkbox"]:before{
+    display: block;
+    content: '';
+    width: 20px;
+    height: 20px;
+    margin-top: -6px;
+    margin-left: -6px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+input[type="checkbox"]:after{
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    display: block;
+    content: '';
+    width: 16px;
+    height: 16px;
+    background-color: #006EFF;
+    transform: scale(0);
+    transition: transform 0.1s linear;
+}
+input[type="checkbox"]:checked:after{
+    transform: scale(1);
+}
+
+.center {
+    width: 1000px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.contact-list {
+    overflow: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    list-style: none;
+    background-color: #ffffff;
+    box-shadow: 0 0 2px rgba(0,0,0,.12),
+                0 2px 4px rgba(0,0,0,.24);
+}
+
+.contact-list .item{
+    width: 100%;
+    padding: 10px 0;
+    border-top: 1px solid #ececec;
+    display: block;
+    float: left;
+}
+.contact-list .item:first-child{
+    border-top: none;
+}
+
+.row {
+    width: 100%;
+    display: table;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+    padding: 0 10px;
+    display: table-cell;
+}
+
+.col-1 {
+    width: 8.3333%
+}
+.col-2 {
+    width: 16.6666%
+}
+.col-3 {
+    width: 25%;
+}
+.col-4 {
+    width: 33.3333%
+}
+.col-5 {
+    width: 41.6666%
+}
+.col-6 {
+    width: 50%
+}
+.col-7 {
+    width: 58.3333%
+}
+.col-8 {
+    width: 66.666%
+}
+.col-9 {
+    width: 75%
+}
+.col-10 {
+    width: 74.9999%
+}
+.col-11 {
+    width: 91.6666%
+}
+.col-12 {
+    width: 100%
+}
+
+.text-right {
+    text-align: right;
+}
+.text-center {
+    text-align: center;
+}
+
+/*Buttons*/
+
+
+.btn-info, .btn-danger, .btn-success, .btn-default{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px;
+    border-radius: 2px;
+    font-weight: lighter;
+    cursor: pointer;
+    transition: box-shadow 0.1s linear;
+}
+
+.btn-info:hover, .btn-danger:hover, .btn-success:hover, .btn-default:hover{
+    box-shadow: 0 0 4px rgba(100, 100, 100, 0.8);
+}
+
+.btn-info .fa, .btn-danger .fa, .btn-success .fa{
+    font-size: 16px;
+}
+
+.btn-sqr{
+    width: 40px;
+    height: 36px;
+    text-align: center;
+}
+
+.btn-rounded{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    padding: 21px 0;
+    text-align: center;
+}
+.btn-rounded .fa{
+    font-size: 20px;
+}
+
+.btn-info{
+    background-color: #0288D1;
+    color: #fff;
+}
+
+.btn-success{
+    background-color: #02D182;
+    color: #fff;
+}
+
+.btn-danger{
+    background-color: #D10202;
+    color: #fff;
+}
+
+.btn-default{
+    background-color: #999999;
+    color: #fff;
+}

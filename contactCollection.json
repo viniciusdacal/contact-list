@@ -1,0 +1,34 @@
+[
+    {
+        "name":"Jhon Doe",
+        "email": "jhon.doe@gmail.com",
+        "phone": "(44) 9999-9999"
+    },
+    {
+        "name": "Dart Vader",
+        "email": "dart.vader@gmail.com",
+        "phone": "(44) 9999-9999"
+
+    },
+    {
+        "name": "Sherlock Holmes",
+        "email": "sherlock.holmes@gmail.com",
+        "phone": "(44) 9999-9999"
+    },
+    {
+        "name": "Master Yoda",
+        "email": "jhon.doe@gmail.com",
+        "phone": "(44) 9999-9999"
+    },
+    {
+        "name": "luke skywalker",
+        "email": "dart.vader@gmail.com",
+        "phone": "(44) 9999-9999"
+
+    },
+    {
+        "name": "Anakin skywalker",
+        "email": "sherlock.holmes@gmail.com",
+        "phone": "(44) 9999-9999"
+    }
+]

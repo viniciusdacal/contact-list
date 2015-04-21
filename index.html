@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajax</title>
+    <link href="vendor/font-awesome-4.3.0/css/font-awesome.min.css" type="text/css" rel="stylesheet"></style>
+    <link href="css/estilos.css" type="text/css" rel="stylesheet"></style>
+</head>
+<body>
+    <div class="center">
+
+        <ul class="contact-list" id="contactList">
+            <li class="item form-item" >
+                <div class="row">
+                    <div class="col-1 text-center">
+                    </div>
+                    <div class="col-3">
+                        <input type="text" data-model="name" value="{{contact.name}}" placeholder="Nome">
+                    </div>
+                    <div class="col-2">
+                        <input type="text" data-model="phone" value="{{contact.phone}}" placeholder="Telefone">
+                    </div>
+                    <div class="col-3">
+                        <input type="text" data-model="email" value="{{contact.email}}" placeholder="Email">
+                    </div>
+                    <div class="col-3 text-right">
+                        <a href="#" class="btn-sqr btn-default" data-canceledit><span class="fa fa-close"></span></a>
+                        <a href="#" class="btn-sqr btn-success" data-update><span class="fa fa-check"></span></a>
+                    </div>
+                </div>
+            </li>
+            <li class="item list-item">
+                <div class="row">
+                    <div class="col-1 text-center">
+                        <input type="checkbox">
+                    </div>
+                    <div class="col-3">{{contact.name}}</div>
+                    <div class="col-2">{{contact.phone}}</div>
+                    <div class="col-3">{{contact.email}}</div>
+                    <div class="col-3 text-right">
+                        <a href="#" class="btn-sqr btn-info" data-edit>
+                            <span class="fa fa-pencil"></span>
+                        </a>
+                        <a href="#" class="btn-sqr btn-danger" data-remove>
+                            <span class="fa fa-trash"></span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <a href="#" id="button_add" class="btn-success btn-rounded"><span class="fa fa-plus"></span></a>
+    </div>
+    <script src="js/xhr.js"></script>
+    <script src="js/foreach.js"></script>
+    <script src="js/templateRender.js"></script>
+    <script src="js/contacts.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
