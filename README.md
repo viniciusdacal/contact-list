@@ -8,3 +8,6 @@ caso encontrar uma que você consiga resolver, faça a alteração em seu **Fork
 
 Se tiver ideia para uma nova feature ou encontrar um bug, crie uma [nova issue](https://github.com/viniciusdacal/contact-list/issues/new).
 
+Aconselhamos que não use plugins para resolver issues.
+As issues que fizer necessário o uso de plugin ou código de terceiros, será alertada na descrição da própria issue.
+
