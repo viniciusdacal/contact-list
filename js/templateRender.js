@@ -7,7 +7,7 @@ var TemplateRender = (function () {
 			while(res = re.exec(text)) {
 				var path = res[1].trim();
 				var occurrence = res[0];
-				var val = (new function ("scope", "return scope."+path)(scope));
+				var val = ( new Function ("scope", "return scope." + path)(scope));
 				text = text.replace(new RegExp(occurrence, 'g'), val);
 			}
 
