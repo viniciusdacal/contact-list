@@ -196,3 +196,6 @@ input[type="checkbox"]:checked:after{
     background-color: #999999;
     color: #fff;
 }
+#button_add{
+    margin-top:20px;
+}
